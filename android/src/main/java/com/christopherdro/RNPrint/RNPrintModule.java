@@ -177,7 +177,7 @@ public class RNPrintModule extends ReactContextBaseJavaModule {
                 };
 
                 PrintAttributes printAttributes = new PrintAttributes.Builder()
-                        .setMediaSize(isLandscape?PrintAttributes.MediaSize.UNKNOWN_LANDSCAPE:PrintAttributes.MediaSize.ISO_A4)
+                        .setMediaSize(PrintAttributes.MediaSize.ISO_A4)
                         .setMinMargins(PrintAttributes.Margins.NO_MARGINS)
                         .build();
                 printManager.print(jobName, pda, printAttributes);
